@@ -31,7 +31,7 @@ function draw() {
       pixels[index+0] = r;
       pixels[index+1] = bright;
       pixels[index+2] = bright;
-      pixels[index+3] = 255;
+      pixels[index+3] = 254;
     }
   }
   
