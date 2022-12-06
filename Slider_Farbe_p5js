@@ -1,0 +1,20 @@
+let rSlider;
+
+function setup() {
+  // create canvas
+  createCanvas(710, 400);
+  textSize(15);
+  noStroke();
+
+  // create sliders
+  rSlider = createSlider(0, 255, 70);
+  rSlider.position(20, 20);
+ 
+}
+
+function draw() {
+  const r = rSlider.value();
+  
+  background(r);
+  
+}
