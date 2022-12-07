@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import mediapipe as mp
 from facial_landmarks import FaceLandmarks
+
 # Load face landmarks
 fl = FaceLandmarks()
 
@@ -43,7 +44,7 @@ while True:
     cv2.imshow("Frame", frame)
     cv2.imshow("Mask", mask)
     cv2.imshow("background", background)
-    cv.2.imshow("Face extracted", blurred_face)
+    cv2.imshow("face_extracted", blurred_face)
     cv2.imshow("Result", result)
 
     key = cv2.waitkey(30)
